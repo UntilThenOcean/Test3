@@ -1,5 +1,6 @@
 package com.company;
 
+import java.time.LocalDate;
 import java.util.*;
 
 public class One {
@@ -54,8 +55,13 @@ public class One {
         for (int element:a) {
             System.out.println(element);
         }*/
-        System.out.println(Arrays.toString(a));
+        //System.out.println(Arrays.toString(a));
 
+        LocalDate newYearsEve = LocalDate.of(1999,12,31);
+        int year = newYearsEve.getYear();
+        int month = newYearsEve.getMonthValue();
+        int day = newYearsEve.getDayOfMonth();
+        System.out.println(year);
 
 
 
