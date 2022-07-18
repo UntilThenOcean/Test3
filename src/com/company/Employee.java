@@ -8,21 +8,30 @@ package com.company;
 
 import java.time.*;
 
-class Employee {
+class Employee extends Person{
 
-    private String name;
     private double salary;
     private LocalDate hireDay;
 
-    public Employee(String n, double s, int year, int month, int day) {
-        this.name = n;
-        this.salary = s;
+    /**
+     *
+     * @param name
+     * @param salary
+     * @param year
+     * @param month
+     * @param day
+     */
+
+    public Employee(String name, double salary, int year, int month, int day) {
+
+        super(name);
+        this.salary = salary;
         hireDay = LocalDate.of(year,month,day);
     }
 
-    public String getName() {
-
-        return name;
+    @Override
+    public String getDescription() {
+        return String.format("an employee with a salary of $%.2f", salary);
     }
 
     public double getSalary() {

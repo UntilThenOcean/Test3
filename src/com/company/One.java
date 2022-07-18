@@ -9,14 +9,14 @@ public class One {
 
         String meeting = "Hello";
         String word  = "World";
-/*
+/**
         StringBuilder builder = new StringBuilder();
         builder.append(meeting);
         builder.append(word);
         String completedString = builder.toString();
         System.out.println(completedString);
 */
- /*       Scanner in = new Scanner(System.in);
+ /**       Scanner in = new Scanner(System.in);
         System.out.print("What is your name ? ");
         String name = in.nextLine();
 
@@ -28,7 +28,7 @@ public class One {
 
        // System.out.printf("%tc", new Date());
 
-/*        Scanner inTwo = new Scanner(System.in);
+/**        Scanner inTwo = new Scanner(System.in);
 
         System.out.println("Select an option (1,2,3,4)?");
         int k = inTwo.nextInt();
@@ -45,7 +45,7 @@ public class One {
         }*/
 
         int[] a = new int[100];
-/*
+/**
         // they are the same:
         for (int i = 0; i<a.length;i++) {
 
