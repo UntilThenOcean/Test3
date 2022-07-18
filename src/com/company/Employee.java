@@ -6,7 +6,7 @@
  */
 package com.company;
 
-import java.time.LocalDate;
+import java.time.*;
 
 class Employee {
 
@@ -15,12 +15,13 @@ class Employee {
     private LocalDate hireDay;
 
     public Employee(String n, double s, int year, int month, int day) {
-        name = n;
-        salary = s;
+        this.name = n;
+        this.salary = s;
         hireDay = LocalDate.of(year,month,day);
     }
 
     public String getName() {
+
         return name;
     }
 
