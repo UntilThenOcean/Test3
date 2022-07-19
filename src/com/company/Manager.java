@@ -28,7 +28,23 @@ public class Manager extends Employee{
         return baseSalary + bonus;
     }
 
-    public void setBonus(double b) {
-        bonus = b;
+    public void setBonus(double bonus) {
+        this.bonus = bonus;
     }
+
+    public boolean equals(Object otherObject) {
+        if (!super.equals(otherObject))
+            return false;
+        var other = (Manager) otherObject;
+        return bonus == other.bonus;
+    }
+
+    public int hashCore() {
+        return java.util.Objects.hash(super.hashCore(), bonus);
+    }
+
+    public String toSting() {
+        return super.toString() + "[bonus" + bonus + "]";
+    }
+
 }
